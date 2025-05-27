@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=More+Sugar&display=swap');
-
 body {
   margin: 0;
-  font-family: 'More Sugar', cursive, sans-serif;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
   background-color: #fdf1dd;
   color: #333;
 }

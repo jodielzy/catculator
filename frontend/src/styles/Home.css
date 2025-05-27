@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=More+Sugar&display=swap');
-
 .home-container {
-  font-family: 'More Sugar', cursive;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
   background-color: #fdf1dd;
   min-height: 100vh;
   text-align: center;
