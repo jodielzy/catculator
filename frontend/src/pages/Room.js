@@ -116,7 +116,7 @@ function Room() {
       <div className="row">
         <label>Add Expense</label>
         <input value={title} onChange={e => setTitle(e.target.value)} placeholder="Title" />
-        <input value={amount} onChange={e => setAmount(e.target.value)} placeholder="Amount" />
+        <input value={amount} onChange={e => setAmount(e.target.value)} placeholder="Amount (Without $)" />
       </div>
 
       <div className="section">
