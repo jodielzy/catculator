@@ -14,7 +14,9 @@ import { getRandomAvatar } from '../assets/avatar';
 import '../styles/Room.css';
 
 function Room() {
-  const roomCode = localStorage.getItem('roomCode') || '';
+  const roomCode = typeof window !== 'undefined' && window.localStorage
+    ? localStorage.getItem('roomCode') || ''
+    : '';
   const [users, setUsers] = useState([]);
   const [summary, setSummary] = useState([]);
   const [expenses, setExpenses] = useState([]);

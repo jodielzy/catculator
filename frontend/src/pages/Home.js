@@ -11,16 +11,24 @@ function Home() {
   const navigate = useNavigate();
 
   const handleCreate = async () => {
-    const res = await createRoom();
-    localStorage.setItem('roomCode', res.data.room_code);
-    navigate('/room');
+    try {
+      const res = await createRoom();
+      if (typeof window !== 'undefined' && window.localStorage) {
+        localStorage.setItem('roomCode', res.data.room_code);
+      }
+      navigate('/room');
+    } catch (err) {
+      alert("Something went wrong");
+    }
   };
 
   const handleJoin = async () => {
-    if (code.length !== 6) return alert("Enter a 6-digit room code.");
+    if (code.length !== 6) return alert("Enter a 6-digit code.");
     try {
       await getUsers(code);
-      localStorage.setItem('roomCode', code);
+      if (typeof window !== 'undefined' && window.localStorage) {
+        localStorage.setItem('roomCode', code);
+      }
       navigate('/room');
     } catch {
       alert("Room not found.");
