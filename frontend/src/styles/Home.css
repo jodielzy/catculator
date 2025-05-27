@@ -46,7 +46,7 @@
   border: none;
   font-size: 1.2rem;
   text-align: center;
-  font-family: 'More Sugar', cursive;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
   z-index: 2;
   position: relative;
   background-color: #fffefc;
@@ -62,7 +62,7 @@
   margin: 0.5rem auto;
   font-size: 1.1rem;
   border-radius: 1rem;
-  font-family: 'More Sugar', cursive;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
   cursor: pointer;
   transition: background 0.2s;
   transform: translateY(-30px);
