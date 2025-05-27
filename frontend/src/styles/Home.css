@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=More+Sugar&display=swap');
+
+.home-container {
+  font-family: 'More Sugar', cursive;
+  background-color: #fdf1dd;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #543f35;
+}
+
+.input-with-cat {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-image {
+  width: 80%;
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 85%;
+  max-width: 400px;
+  margin: 1.5rem auto;
+}
+
+.home-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'More Sugar', cursive;
+  z-index: 2;
+  position: relative;
+  background-color: #fffefc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-30px);
+}
+
+.home-button {
+  background-color: #a18675;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  font-family: 'More Sugar', cursive;
+  cursor: pointer;
+  transition: background 0.2s;
+  transform: translateY(-30px);
+}
+
+.home-button:hover {
+  background-color: #7f6659;
+}
+
+/* 🧶 Yarn animation at the bottom of the screen */
+.yarn-bottom {
+  position: fixed;
+  bottom: 10px;
+  left: -40px;
+  width: calc(100% + 80px);
+  height: 50px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.yarn-bottom img {
+  position: absolute;
+  top: 0;
+  height: 40px;
+  animation: yarnBottomSlide 5s ease-in-out infinite alternate;
+}
+
+@keyframes yarnBottomSlide {
+  0% {
+    left: -40px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: calc(100% - 10px);
+    transform: rotate(360deg);
+  }
+}
